@@ -2,8 +2,12 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
 def home(request):
-    return render(request, 'home.html')
+    """Контроллер отображения домашней страницы"""
+    return render(request, "home.html")
+
 
 def contacts(request):
-    return render(request, 'contacts.html')
+    """Контроллер отображения страницы контактов"""
+    return render(request, "contacts.html")
